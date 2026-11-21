@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control con la mano</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <main id="stage">
+    <video id="cam" playsinline muted></video>
+    <div id="shade"></div>
+    <canvas id="gl"></canvas>
+    <canvas id="fx"></canvas>
+
+    <div id="tag" data-state="idle">
+      <div class="line">AGENTE <b>JVS-01</b></div>
+      <div class="line">ESTADO: <span class="state">IDLE</span></div>
+    </div>
+
+    <aside id="term">
+      <div class="head"></div>
+      <div class="status"></div>
+      <div class="log"></div>
+    </aside>
+
+    <div id="topbar">
+      <span id="gesture">—</span>
+      <span id="fps">0 FPS</span>
+    </div>
+
+    <div id="legend">
+      <div><b>✋</b> palma abierta · saludo</div>
+      <div><b>✌</b> índice + corazón · caminar hacia donde apuntan</div>
+      <div><b>☝</b> solo índice · correr</div>
+      <div><b>✊</b> puño · carga pesada</div>
+      <div><b>👌</b> pinza · saltar</div>
+      <div class="kb">teclado: 0‑5 gestos · flechas/WASD dirección · H oculta ayuda</div>
+    </div>
+  </main>
+
+  <section id="start">
+    <div class="card">
+      <h1>CONTROL CON LA MANO</h1>
+      <p id="loadmsg">Cargando modelo y animaciones…</p>
+      <div class="bar"><i id="loadbar"></i></div>
+      <div class="actions">
+        <button id="btnCam" disabled>Iniciar con cámara</button>
+        <button id="btnKb" class="ghost" disabled>Probar con teclado</button>
+      </div>
+      <p id="err" class="err"></p>
+    </div>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# cmd.exe necesita saltos de línea CRLF; sin esto Git podría guardarlos como LF y romper el .bat
+*.bat text eol=crlf
+
+*.wasm binary
+*.fbx  binary
+*.jpg  binary
+*.gif  binary

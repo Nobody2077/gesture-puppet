@@ -1,0 +1,19 @@
+# Modelos y animaciones de Mixamo: su licencia no permite redistribuirlos.
+# Cada persona los descarga gratis (ver assets/LEEME.md).
+assets/*.fbx
+assets/*.task
+
+# Copia de trabajo de las animaciones originales
+claude aqui esta las animaciones/
+
+# Videos crudos (al repo solo van los GIF/JPG de docs/)
+*.mp4
+*.mov
+
+# Python
+__pycache__/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.vscode/
