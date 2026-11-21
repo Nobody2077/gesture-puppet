@@ -5,10 +5,15 @@ Funciona todo en el navegador con la cámara web: **MediaPipe** rastrea la mano 
 Ningún cuadro de la cámara sale de tu computadora.
 
 <p align="center">
-  <img src="docs/saludo.jpg" width="45%" alt="Palma abierta: el agente saluda">
-  &nbsp;
-  <img src="docs/corriendo.jpg" width="45%" alt="Solo el índice: el agente corre hacia donde apunta">
+  <img src="docs/marco.svg" width="100%" alt="Gesture Puppet en acción: el agente saluda con la palma abierta y corre al apuntar con el índice">
 </p>
+
+## En acción
+
+| Palma abierta → saluda | Solo índice → corre |
+|---|---|
+| ![Palma abierta: el agente saluda](docs/saludo.jpg) | ![Solo el índice: el agente corre hacia donde apunta](docs/corriendo.jpg) |
+| Muestro la palma con los cinco dedos abiertos. Cada yema (punto blanco) lanza un hilo hacia la cabeza, las manos y los pies del agente, que levanta el brazo y saluda. La terminal de la derecha registra el cambio de estado. | Dejo solo el índice estirado y el agente corre hacia donde apunta. Los hilos siguen a mis dedos en tiempo real y la etiqueta sobre su cabeza pasa a **CORRIENDO**. |
 
 ## Gestos
 
