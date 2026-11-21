@@ -1,4 +1,4 @@
-# Control con la mano
+# Gesture Puppet · Control con la mano
 
 Un personaje 3D que obedece los gestos de tu mano en tiempo real, unido a tus dedos con hilos de marioneta.
 Funciona todo en el navegador con la cámara web: **MediaPipe** rastrea la mano y **three.js** dibuja el 3D.
@@ -29,7 +29,7 @@ Necesitas Python 3 (solo para el servidor local) y un navegador moderno (Chrome,
 
 1. Clona el repo:
    ```bash
-   git clone https://github.com/Nobody2077/control-con-la-mano.git
+   git clone https://github.com/Nobody2077/gesture-puppet.git
    ```
 2. Descarga el personaje y las animaciones gratis de Mixamo y ponlos en `assets/`.
    Están los pasos en [`assets/LEEME.md`](assets/LEEME.md). No vienen incluidos porque su licencia no permite redistribuirlos.
